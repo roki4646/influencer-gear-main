@@ -205,11 +205,111 @@ main{
   .rating input:checked ~ label {
     color: #00dd55; /* Color for the selected rating */
   }
-  
+
+
+.collection-container .see-more{
+    text-align: end;
+    color: #E02C6D;
+    margin-top: 50px;
+  }
+  .collection-container .see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+  }
 
 /* rating  End*/
 
 /* Popular Collection section End*/
+
+
+/* feature section start */
+.featured-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.featured-container .feature-img{
+    width: 45%;
+
+}
+.featured-container .feature-img img{
+    width: 100%;
+}
+
+.featured-container .feature-content{
+    width: 45%;
+}
+.featured-container .feature-content h1{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.featured-container .feature-content p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;  
+    margin-bottom: 30px;
+}
+
+.join-btn{
+    padding: 10px 24px;
+    border: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #E02C6D;
+}
+
+
+/* feature section End */
+
+/* Footer start */
+footer{
+    background: #0A0826;
+    color: #FFF;
+    text-align: center;
+    padding: 120px 20px;
+}
+footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer small{
+    color: var(--text-gray-300, #D9DBE1);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px; 
+}
+.social-container{
+    max-width: 250px;
+    margin: 0 auto;
+    height: 80px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-container .circle{
+    width: 45px;
+    height: 45px;
+    background: #22213C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+
+/* Footer End */
 
 
 
@@ -232,7 +332,7 @@ main{
         ul{
             padding: 0;
         }
-        .banner-container{
+        .banner-container, .featured-container{
             flex-direction: column-reverse;
             text-align: center;
 
@@ -241,7 +341,7 @@ main{
             top: -25px;
             width: 100%;
         }
-        .collection-container{
+        .collection-container, .featured-container{
             margin-top: 30px;
         }
  
@@ -250,6 +350,15 @@ main{
             gap: 20px;
             margin-top: 40px;
         }
+        .featured-container .feature-img{
+            width: 100%;
+        }
+
+        .featured-container .feature-content{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
     }
 
 
@@ -273,7 +382,8 @@ main{
         flex-direction: column-reverse;
     }
     .banner img{
-        top: -50px;
+        left: -78px;
+        top: -45px;
     }
     .collection-container{
         margin-top: 50px;
